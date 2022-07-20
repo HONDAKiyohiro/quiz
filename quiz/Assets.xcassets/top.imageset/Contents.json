@@ -1,0 +1,23 @@
+{
+  "images" : [
+    {
+      "filename" : "joao-melo-GgI0J1hpDPY-unsplash.jpg",
+      "idiom" : "universal",
+      "scale" : "1x"
+    },
+    {
+      "filename" : "joao-melo-GgI0J1hpDPY-unsplash-1.jpg",
+      "idiom" : "universal",
+      "scale" : "2x"
+    },
+    {
+      "filename" : "joao-melo-GgI0J1hpDPY-unsplash-2.jpg",
+      "idiom" : "universal",
+      "scale" : "3x"
+    }
+  ],
+  "info" : {
+    "author" : "xcode",
+    "version" : 1
+  }
+}

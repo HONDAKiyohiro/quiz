@@ -52,6 +52,7 @@
                     <navigationItem key="navigationItem" id="kRI-v0-Pci"/>
                     <connections>
                         <outlet property="label" destination="ttK-bI-u1p" id="ZfT-OD-7l4"/>
+                        <outlet property="nameTextField" destination="KIH-l1-J9f" id="Pnh-hc-p1Y"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
@@ -61,7 +62,7 @@
         <!--クイズ画面-->
         <scene sceneID="E66-UD-yJo">
             <objects>
-                <viewController title="クイズ画面" id="m8V-OD-uo7" sceneMemberID="viewController">
+                <viewController title="クイズ画面" id="m8V-OD-uo7" customClass="QuizViewController" customModule="quiz" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="KIw-F8-Fzs">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -102,6 +103,9 @@
                         <color key="backgroundColor" name="Base"/>
                     </view>
                     <navigationItem key="navigationItem" id="8Tv-37-FmH"/>
+                    <connections>
+                        <outlet property="label" destination="JAw-Kf-b14" id="cnL-pv-wOs"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="gWp-Gv-Wtc" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>

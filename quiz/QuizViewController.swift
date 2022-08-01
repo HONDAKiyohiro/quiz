@@ -11,12 +11,28 @@ class QuizViewController: UIViewController {
     @IBOutlet weak var label: UILabel!
     var nameText: String = ""
     
+    @IBOutlet weak var quizCard: QuizCard!
+    
     override func viewDidLoad() {
         super.viewDidLoad()
 
         // Do any additional setup after loading the view.
+        
+        self.quizCard.style = .initial
+        let panGestureRcognizer = UIPanGestureRecognizer()
+        panGestureRcognizer.addTarget(self, action: #selector(dragQuizCard(_:)))
+        self.quizCard.addGestureRecognizer(panGestureRcognizer)
+        
+    }
+    
+    @objc func dragQuizCard(_ sender: UIPanGestureRecognizer){
+        print("ドラッグしました")
 
     }
+    
+    
+    
+
     
 
     /*

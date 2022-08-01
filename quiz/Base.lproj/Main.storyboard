@@ -88,6 +88,11 @@
                                     </label>
                                 </subviews>
                                 <color key="backgroundColor" name="normal background"/>
+                                <connections>
+                                    <outlet property="iconImageView" destination="nNg-xe-jUN" id="XBP-nk-ZmS"/>
+                                    <outlet property="quizImageView" destination="dra-t6-Yy5" id="1aU-Oi-fSK"/>
+                                    <outlet property="quizLabel" destination="gbg-T5-hp3" id="Uxj-Ga-Ezd"/>
+                                </connections>
                             </view>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="2" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="JAw-Kf-b14">
                                 <rect key="frame" x="20" y="152" width="374" height="63"/>
@@ -105,6 +110,7 @@
                     <navigationItem key="navigationItem" id="8Tv-37-FmH"/>
                     <connections>
                         <outlet property="label" destination="JAw-Kf-b14" id="cnL-pv-wOs"/>
+                        <outlet property="quizCard" destination="WsN-Eb-VON" id="uvw-xY-wJk"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="gWp-Gv-Wtc" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>

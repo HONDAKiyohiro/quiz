@@ -26,11 +26,32 @@ class QuizViewController: UIViewController {
     }
     
     @objc func dragQuizCard(_ sender: UIPanGestureRecognizer){
-        print("ドラッグしました")
+        switch sender.state {
+        case .began, .changed:
+            self.transeformQuizCard(gesture: sender)
+        case .ended:
+            break
+        default:
+            break
+        }
 
     }
     
-    
+    func transeformQuizCard(gesture: UIPanGestureRecognizer){
+        let translation = gesture.translation(in: self.quizCard)
+        let translationTransForm = CGAffineTransform(translationX: translation.x, y: translation.y)
+        let translationPercent = translation.x/UIScreen.main.bounds.width/2
+        let rotationAngle = CGFloat.pi / 3 * translationPercent
+        let rotationTranform = CGAffineTransform(rotationAngle: rotationAngle)
+        let transform = translationTransForm.concatenating(rotationTranform)
+        self.quizCard.transform = transform
+        
+        if translation.x > 0{
+            self.quizCard.style = .right
+        }else{
+            self.quizCard.style = .wrong
+        }
+    }
     
 
     

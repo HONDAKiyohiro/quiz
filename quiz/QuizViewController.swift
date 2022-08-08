@@ -12,6 +12,7 @@ class QuizViewController: UIViewController {
     var nameText: String = ""
     
     @IBOutlet weak var quizCard: QuizCard!
+    let manager: QuizManager = QuizManager()
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -19,10 +20,16 @@ class QuizViewController: UIViewController {
         // Do any additional setup after loading the view.
         
         self.quizCard.style = .initial
+        self.loadQuiz()
         let panGestureRcognizer = UIPanGestureRecognizer()
         panGestureRcognizer.addTarget(self, action: #selector(dragQuizCard(_:)))
         self.quizCard.addGestureRecognizer(panGestureRcognizer)
         
+    }
+    
+    func loadQuiz(){
+        self.quizCard.quizLabel.text = manager.currentQuiz.text
+        self.quizCard.quizImageView.image = UIImage(named: manager.currentQuiz.imageName)
     }
     
     @objc func dragQuizCard(_ sender: UIPanGestureRecognizer){

@@ -111,6 +111,7 @@
                     <connections>
                         <outlet property="label" destination="JAw-Kf-b14" id="cnL-pv-wOs"/>
                         <outlet property="quizCard" destination="WsN-Eb-VON" id="uvw-xY-wJk"/>
+                        <segue destination="Wxf-rC-FEw" kind="show" identifier="goToResult" id="5B6-O9-4rc"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="gWp-Gv-Wtc" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
@@ -120,7 +121,7 @@
         <!--結果画面-->
         <scene sceneID="RUN-Qs-7jf">
             <objects>
-                <viewController title="結果画面" id="Wxf-rC-FEw" sceneMemberID="viewController">
+                <viewController title="結果画面" id="Wxf-rC-FEw" customClass="ResultViewController" customModule="quiz" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="ng0-ry-PaV">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -145,11 +146,19 @@
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <state key="normal" title="Button"/>
                                 <buttonConfiguration key="configuration" style="plain" title="Button"/>
+                                <connections>
+                                    <action selector="pushResultButton:" destination="Wxf-rC-FEw" eventType="touchUpInside" id="b06-OP-daw"/>
+                                </connections>
                             </button>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="LKy-vH-se3"/>
                         <color key="backgroundColor" name="Base"/>
                     </view>
+                    <navigationItem key="navigationItem" id="oA5-FV-6mc"/>
+                    <connections>
+                        <outlet property="label" destination="uoj-to-c7A" id="EUT-WI-kko"/>
+                        <outlet property="textView" destination="dze-9l-dTS" id="3QW-mD-32m"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Oq5-sX-gc8" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
@@ -174,7 +183,7 @@
     </scenes>
     <resources>
         <image name="neko" width="2513" height="1729"/>
-        <image name="right icon" width="1728" height="2592"/>
+        <image name="right icon" width="1152" height="1728"/>
         <namedColor name="Base">
             <color red="0.64313725490196083" green="0.83529411764705885" blue="0.74117647058823533" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
         </namedColor>

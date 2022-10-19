@@ -54,15 +54,20 @@ class QuizViewController: UIViewController {
                                     }
         )
         
-        
-        
     }
     
     func showNextQuiz(){
         self.manager.nextQuiz()
-        self.quizCard.transform = CGAffineTransform.identity
-        self.quizCard.style = .initial
-        self.loadQuiz()
+        
+        switch manager.status {
+        case .inAnswer:
+            self.quizCard.transform = CGAffineTransform.identity
+            self.quizCard.style = .initial
+            self.loadQuiz()
+        case .done:
+            self.quizCard.isHidden = true
+            self.performSegue(withIdentifier: "goToResult", sender: nil)
+        }
     }
     
     
@@ -94,6 +99,13 @@ class QuizViewController: UIViewController {
             self.quizCard.style = .right
         }else{
             self.quizCard.style = .wrong
+        }
+    }
+    
+    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
+        if let resultViewController: ResultViewController = segue.destination as? ResultViewController{
+            resultViewController.nameText = self.nameText
+            resultViewController.score = self.manager.score
         }
     }
     

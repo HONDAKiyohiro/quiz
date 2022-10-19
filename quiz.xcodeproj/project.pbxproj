@@ -15,6 +15,7 @@
 		38313205288821A0004A0D0C /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 38313203288821A0004A0D0C /* Main.storyboard */; };
 		38313207288821A4004A0D0C /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 38313206288821A4004A0D0C /* Assets.xcassets */; };
 		3831320A288821A4004A0D0C /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 38313208288821A4004A0D0C /* LaunchScreen.storyboard */; };
+		383177B7290028EB00C6D3A9 /* ResultViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 383177B6290028EB00C6D3A9 /* ResultViewController.swift */; };
 		383E54BE289D4FEA00721BA4 /* Quiz.swift in Sources */ = {isa = PBXBuildFile; fileRef = 383E54BD289D4FEA00721BA4 /* Quiz.swift */; };
 		38D4191B289382B5007EEECF /* QuizCard.swift in Sources */ = {isa = PBXBuildFile; fileRef = 38D4191A289382B5007EEECF /* QuizCard.swift */; };
 /* End PBXBuildFile section */
@@ -30,6 +31,7 @@
 		38313206288821A4004A0D0C /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		38313209288821A4004A0D0C /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		3831320B288821A4004A0D0C /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		383177B6290028EB00C6D3A9 /* ResultViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ResultViewController.swift; sourceTree = "<group>"; };
 		383E54BD289D4FEA00721BA4 /* Quiz.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Quiz.swift; sourceTree = "<group>"; };
 		38D4191A289382B5007EEECF /* QuizCard.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = QuizCard.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -68,6 +70,7 @@
 				383131FF288821A0004A0D0C /* SceneDelegate.swift */,
 				38313201288821A0004A0D0C /* ViewController.swift */,
 				38313203288821A0004A0D0C /* Main.storyboard */,
+				383177B6290028EB00C6D3A9 /* ResultViewController.swift */,
 				381869C12890051500F73D7B /* QuizViewController.swift */,
 				383E54BD289D4FEA00721BA4 /* Quiz.swift */,
 				38203AA928A1271300A587C9 /* QuizManager.swift */,
@@ -153,6 +156,7 @@
 				38313202288821A0004A0D0C /* ViewController.swift in Sources */,
 				383131FE288821A0004A0D0C /* AppDelegate.swift in Sources */,
 				383E54BE289D4FEA00721BA4 /* Quiz.swift in Sources */,
+				383177B7290028EB00C6D3A9 /* ResultViewController.swift in Sources */,
 				38203AAA28A1271300A587C9 /* QuizManager.swift in Sources */,
 				38313200288821A0004A0D0C /* SceneDelegate.swift in Sources */,
 				38D4191B289382B5007EEECF /* QuizCard.swift in Sources */,
